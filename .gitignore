@@ -1,0 +1,25 @@
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 操作系统
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# Office 临时文件
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# 本地原始资料（体积极大，不入库）
+/原始赛题包/
+/原始论文包/
+*.rar
+*.7z
