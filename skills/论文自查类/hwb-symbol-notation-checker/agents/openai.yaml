@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 符号说明自查"
+  short_description: "检查符号遗漏、冲突、单位、上下标与首次定义"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-symbol-notation-checker 检查我的符号说明与全文符号使用：是否遗漏定义、是否有冲突、单位是否齐全、排版是否规范。"
+policy:
+  allow_implicit_invocation: true

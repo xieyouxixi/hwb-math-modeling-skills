@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 问题分析自查"
+  short_description: "检查任务映射、数据推理、选模依据与跨问联动"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-problem-analysis-checker 检查我的问题分析章节：任务是否逐问映射、数据推理是否成立、选模依据是否充分、跨问联动是否交代。"
+policy:
+  allow_implicit_invocation: true

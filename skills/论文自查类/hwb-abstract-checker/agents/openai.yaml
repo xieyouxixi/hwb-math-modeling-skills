@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 摘要自查"
+  short_description: "检查摘要五要素、结果具体性、覆盖面与两页限制"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-abstract-checker 检查我的摘要、题目和关键词，重点核对建模思路、主要方法、模型、结果与结论、创新点五要素，以及是否超过两页。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB AI 使用披露"
+  short_description: "按华为杯 AI 政策生成或检查 AI 工具使用声明与使用详情"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-ai-usage-disclosure 根据我真实的 AI 使用记录生成合规的 AI 工具使用声明与使用详情，或检查我已写的披露材料。"
+policy:
+  allow_implicit_invocation: true

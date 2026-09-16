@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 问题重述"
+  short_description: "根据华为杯赛题生成问题重述，或对照原题检查已有重述"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-problem-restatement 根据完整赛题生成合规的问题重述，或对照原题检查我写的问题重述。"
+policy:
+  allow_implicit_invocation: true

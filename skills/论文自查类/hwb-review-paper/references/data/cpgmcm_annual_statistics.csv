@@ -1,0 +1,13 @@
+﻿# 华为杯（CPGMCM）历年参赛与获奖总量统计
+# 说明：本表仅收录已公开可核实的总量数据。无法核实的字段一律留空（NA），不编造。
+# 列：年份(year), 届次(session), 参赛单位数(unit_count), 参赛队数(team_count),
+#     一等奖队数(first_prize), 二等奖队数(second_prize), 三等奖队数(third_prize),
+#     一等奖比例%(first_rate), 二等奖比例%(second_rate), 三等奖比例%(third_rate), 总获奖率%(total_rate)
+# 来源：官方获奖公示与组委会公开通报；逐届可能调整，以当届官方文件为准。
+year,session,unit_count,team_count,first_prize,second_prize,third_prize,first_rate,second_rate,third_rate,total_rate
+2020,17,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2021,18,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2022,19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2023,20,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2024,21,521,20247,NA,NA,NA,NA,NA,NA,NA
+2025,22,631,24371,244,3085,4830,1.00,12.66,19.82,33.48

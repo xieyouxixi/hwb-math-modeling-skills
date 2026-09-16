@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 参考文献与附录自查"
+  short_description: "检查引用一致性、文献规范、附录完整性、代码与支撑材料合规"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-reference-appendix-checker 检查我的正文引用、参考文献、附录、代码与支撑材料：引用是否一一对应、格式是否统一、附件是否合规。"
+policy:
+  allow_implicit_invocation: true

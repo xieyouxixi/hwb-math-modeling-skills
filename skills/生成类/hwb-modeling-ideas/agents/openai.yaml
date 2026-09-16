@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 建模思路"
+  short_description: "为华为杯赛题生成贯穿全文的建模主线与逐问候选模型对比"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-modeling-ideas 分析完整赛题与附件，生成全文建模主线、逐问候选模型对比、选型理由、创新点与验证路线。"
+policy:
+  allow_implicit_invocation: true

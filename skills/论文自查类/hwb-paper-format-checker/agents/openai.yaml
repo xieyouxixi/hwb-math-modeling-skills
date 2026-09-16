@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 论文格式自查"
+  short_description: "严格总检模板符合性、匿名性、页面结构、篇幅、图表公式与文件卫生"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-paper-format-checker 严格检查我的论文 PDF：官方模板符合性、首页封皮与图标、摘要两页限制、除首页外的匿名性、图表公式编号、篇幅与文件卫生。"
+policy:
+  allow_implicit_invocation: true

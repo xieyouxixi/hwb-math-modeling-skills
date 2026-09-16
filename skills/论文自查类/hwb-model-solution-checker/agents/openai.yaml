@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 模型求解自查"
+  short_description: "检查模型建立、求解、结果、检验、灵敏度与可复现性"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-model-solution-checker 检查我的模型建立与求解章节：推导链、求解方法、逐问回答、独立验证、灵敏度分析与可复现性。"
+policy:
+  allow_implicit_invocation: true

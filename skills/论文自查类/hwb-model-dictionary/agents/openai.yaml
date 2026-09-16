@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 模型字典"
+  short_description: "判断候选模型与题目、数据及用途的适配性，给出替代方案"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-model-dictionary 判断候选模型是否适配：题目=<题目内容或题号> 数据=<样本量、变量类型、结构、缺失> 候选模型=<模型名> 求解思路=<具体用途>"
+policy:
+  allow_implicit_invocation: true

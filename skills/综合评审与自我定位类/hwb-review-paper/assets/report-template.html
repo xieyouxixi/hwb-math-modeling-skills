@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HWB 数学建模论文评审报告">
+  <title>{{REPORT_TITLE}}</title>
+  <style>
+    :root{--ink:#12213f;--muted:#64748b;--line:#dbe5f1;--card:#fff;--bg:#f3f7fc;--indigo:#4f46e5;--cyan:#06b6d4;--good:#059669;--warn:#d97706;--bad:#dc2626;--radius:18px;--shadow:0 14px 35px rgba(30,58,138,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#eef4ff 0,#f8fafc 420px);color:var(--ink);font:15px/1.72 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+    a{color:var(--indigo)}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}.hero{padding:44px 0 24px}.eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 12px;border:1px solid #c7d2fe;border-radius:999px;background:#eef2ff;color:#4338ca;font-weight:700;font-size:13px}.hero h1{font-size:clamp(28px,4vw,46px);line-height:1.15;margin:18px 0 10px;letter-spacing:-.03em}.subtitle{color:var(--muted);max-width:760px;margin:0}.grid{display:grid;gap:16px}.metrics{grid-template-columns:1.25fr repeat(2,1fr);margin:24px 0}.card{background:rgba(255,255,255,.96);border:1px solid rgba(219,229,241,.95);border-radius:var(--radius);box-shadow:var(--shadow)}.metric{padding:22px;min-height:142px}.metric-label{color:var(--muted);font-weight:650}.metric-value{font-size:32px;font-weight:850;margin-top:10px;letter-spacing:-.03em}.metric small{display:block;color:var(--muted);margin-top:5px}.score-card{grid-row:span 2;display:flex;align-items:center;gap:22px}.score-ring{--score:{{FINAL_SCORE_PERCENT}};width:126px;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--indigo) calc(var(--score)*1%),#e5e7eb 0);position:relative;flex:0 0 auto}.score-ring:before{content:"";position:absolute;inset:11px;border-radius:50%;background:#fff}.score-ring b{position:relative;font-size:30px}.rankbar{height:10px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin-top:14px}.rankbar span{display:block;width:{{PERCENTILE}}%;height:100%;background:linear-gradient(90deg,var(--indigo),var(--cyan));border-radius:inherit}.note{padding:14px 18px;background:#eef2ff;border-left:4px solid var(--indigo);border-radius:10px;color:#3730a3}.service{margin-top:16px;padding:22px;background:linear-gradient(135deg,#172554,#312e81);color:#fff}.service h3{margin:0 0 8px}.service a{color:#a5f3fc}.service ul{columns:2;margin-bottom:0}.section{margin:22px 0;padding:28px}.section h2{margin:0 0 20px;font-size:23px;display:flex;align-items:center;gap:10px}.section h2 .num{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--indigo),var(--cyan));color:#fff;font-size:15px;font-weight:800}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}th{background:#f1f5fb;color:#1e293b;font-weight:700}.clean-list{padding-left:0;list-style:none;margin:0}.clean-list.numbered{counter-reset:li}.clean-list.numbered>li{counter-increment:li;padding-left:38px;position:relative;margin:10px 0}.clean-list.numbered>li:before{content:counter(li);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:8px;background:#eef2ff;color:#4338ca;font-weight:800;display:grid;place-items:center}.clean-list:not(.numbered)>li{padding-left:26px;position:relative;margin:8px 0}.clean-list:not(.numbered)>li:before{content:"";position:absolute;left:6px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--cyan)}.footer{margin-top:18px;color:var(--muted);font-size:13px}.print{position:fixed;right:18px;bottom:18px;padding:12px 16px;border:0;border-radius:12px;background:var(--indigo);color:#fff;font-weight:700;cursor:pointer;box-shadow:var(--shadow)}
+    @media(max-width:800px){.metrics{grid-template-columns:1fr}.score-card{grid-row:auto}.service ul{columns:1}.section{padding:20px}.hero{padding-top:28px}}@media print{body{background:#fff}.wrap{width:100%}.print{display:none}.card{box-shadow:none;break-inside:avoid}.section{break-inside:auto}tr{break-inside:avoid}.hero{padding-top:0}@page{size:A4;margin:14mm}}
+  </style>
+</head>
+<body>
+  <header class="hero"><div class="wrap"><span class="eyebrow">HWB-review-paper · 数学建模论文评审</span><h1>{{REPORT_TITLE}}</h1><p class="subtitle">{{REPORT_META}}</p></div></header>
+  <main class="wrap">
+    <section aria-labelledby="summary-title"><h2 id="summary-title" style="position:absolute;left:-9999px">最终得分与竞赛位次</h2><div class="grid metrics">
+      <article class="card metric score-card"><div class="score-ring"><b>{{FINAL_SCORE}}</b></div><div><div class="metric-label">最终得分</div><div class="metric-value">{{FINAL_SCORE}}<small>/ 100</small></div></div></article>
+      <article class="card metric"><div class="metric-label">原始得分</div><div class="metric-value">{{RAW_SCORE}}<small>/ 100</small></div></article>
+      <article class="card metric"><div class="metric-label">格式质量系数</div><div class="metric-value">{{FORMAT_MULTIPLIER}}</div></article>
+      <article class="card metric"><div class="metric-label">预估超过有效论文</div><div class="metric-value">{{PERCENTILE}}%</div><div class="rankbar"><span></span></div></article>
+      <article class="card metric"><div class="metric-label">等价位次</div><div class="metric-value">前 {{TOP_SHARE}}%</div></article>
+    </div><p class="note">{{RANK_METHOD_NOTE}}</p></section>
+    <section class="card section"><h2><span class="num">01</span>详细评分</h2><div class="table-wrap"><table><thead><tr><th>评分项</th><th>权重</th><th>90%封顶</th><th>得分</th><th>证据/位置</th><th>得分依据</th><th>扣分依据</th></tr></thead><tbody>{{SCORING_ROWS}}</tbody></table></div>{{SCORING_SUMMARY}}</section>
+    <section class="card section"><h2><span class="num">02</span>本题任务分解</h2><ol class="clean-list numbered">{{TASK_ITEMS}}</ol></section>
+    <section class="card section"><h2><span class="num">03</span>资格与格式审查</h2><ul class="clean-list">{{AUDIT_ITEMS}}</ul></section>
+    <section class="card section"><h2><span class="num">04</span>评委式评价</h2><ul class="clean-list">{{JUDGE_ITEMS}}</ul></section>
+    <section class="card section"><h2><span class="num">05</span>优先修改建议</h2><ol class="clean-list numbered">{{REVISION_ITEMS}}</ol><p class="footer">HWB-review-paper · 本报告为模型化评审意见，不代表竞赛官方结果</p></section>
+    <aside class="card service" aria-label="官方渠道提示"><h3>✨ 请以官方渠道核正当届规则</h3><ul>
+      <li>中国研究生创新实践系列大赛管理平台：<a href="https://cpipc.acge.org.cn/">https://cpipc.acge.org.cn/</a></li>
+      <li>竞赛期间官方答疑论坛（数学建模网）：<a href="https://www.shumo.com">https://www.shumo.com</a></li>
+      <li>竞赛组委会秘书处（东南大学）：025-83795939 / gscpc3@seu.edu.cn</li>
+    </ul><p style="margin:10px 0 0">本规则摘要为辅助参考，不构成获奖承诺；一切以当届官方文件为准。</p></aside>
+  </main>
+  <button class="print" type="button" onclick="window.print()" aria-label="打印报告">打印 / 保存 PDF</button>
+</body></html>

@@ -1,0 +1,113 @@
+---
+name: hwb-review-paper
+description: Review mathematical modeling competition papers from a complete problem and paper, with an optional strict hwb-paper-format-checker audit, itemized problem-specific scoring, a bottom-up low-score safeguard, and CPGMCM (Huawei Cup graduate contest) award calibration by problem type, participating unit and Huawei-problem choice. Generate a Chinese HTML judge report.
+agent_created: true
+---
+
+# HWB Review Paper
+
+Act as a strict competition judge. Require the complete problem and paper. Derive and freeze the rubric before judging paper quality. Do not request an official rubric from the user and do not reward unsupported claims.
+
+## Knowledge basis and contest gateway
+
+State transparently that this Skill was distilled from the scoring rules, scoring points, review summaries and complete review workflows of 36 Huawei Cup (CPGMCM) problems from 2020-2025 (A-F six problems per year), and that its AI-era readability and evidence checks were further refined from recent review observations. Treat that review sample as an empirical design basis, not an official statistical guarantee. The Skill is primarily calibrated for CPGMCM (Huawei Cup graduate contest); the methodology can review other mathematical modeling contests, but their ranking model must not reuse the CPGMCM population distribution.
+
+At the first interaction, require the user to identify: `是否为"华为杯"中国研究生数学建模竞赛（研究生赛）？请回答"是"，或回答"否 + 竞赛名称"。` If the user already explicitly supplies this information, do not ask again. Do not calculate a position until contest type is known.
+
+Also ask once before formal scoring: `是否启用 hwb-paper-format-checker 进行严格格式审查？严格审查会逐页、逐图表、逐公式和逐项核验，可能得到较低的格式分，并会消耗更多 Token；若论文不是终稿，不建议启用。请回答"启用"或"不启用"。` If the user already made this choice or supplied a complete matching format-checker report, do not ask again.
+
+## Workflow
+
+1. Identify the contest, year, problem and track from supplied evidence, and classify it as `cpgmcm` or `other`. Use `cpgmcm` only for the Huawei Cup China Graduate Mathematical Modeling Contest; route every other contest to `other` unless a same-contest empirical score distribution is available. For CPGMCM, require `赛题编号 A—F`、`参赛单位全称（可选）`、`是否选择华为赛题（是/否）`; if any context item is missing, score paper quality but mark the corresponding competitiveness calibration unavailable rather than guessing.
+2. Read the problem first. Then read these files completely:
+   - [references/rubric-construction.md](references/rubric-construction.md)
+   - [references/title-abstract-keywords.md](references/title-abstract-keywords.md)
+   - [references/formatting-standard.md](references/formatting-standard.md)
+   - [references/award-ranking-output.md](references/award-ranking-output.md)
+   - [references/cross-case-patterns.md](references/cross-case-patterns.md)
+   - [references/rubric.md](references/rubric.md)
+   - [references/atomic-deduction-scoring.md](references/atomic-deduction-scoring.md)
+   - [references/evidence-centered-scoring.md](references/evidence-centered-scoring.md)
+   - For CPGMCM only, also read [references/cpgmcm-problem-type-review.md](references/cpgmcm-problem-type-review.md) and [references/competition-context-adjustment.md](references/competition-context-adjustment.md).
+3. Use only the closest calibration records when they materially match the current problem. Treat A-F historical patterns as review prompts, not preset answers: derive the current rubric independently from the supplied problem, accept any valid alternative, and never require a historical model merely because the problem letter matches.
+4. Run the eligibility gate. If a proven applicable hard-rule violation occurs, report ineligibility and do not calculate score or percentile.
+5. Apply the user's format choice. If strict review is enabled, use `hwb-paper-format-checker` on the complete paper or import a complete report for the same paper version; reuse its eligibility findings, itemized evidence and score using `atomic-deduction-scoring.md`, without duplicate deductions. If strict review is declined, do not invoke that Skill: perform only the ordinary review-format audit in `formatting-standard.md`. In either route, normalize the review-format score to `[-10,10]` and calculate `(format_score + 10) / 20`, bounded to `[0,1.00]`. Record which route was used.
+6. Read and apply `evidence-centered-scoring.md`. Create the fixed 100-point architecture: `摘要与成果概括 10 + 论文规范与可读性 10 + 核心问题回答 75 + 全文整体性与应用价值 5`. Score the 75-point core directly through its seven fixed evidence-centered dimensions: `任务理解与数学抽象 12`, `模型选择的必要性 14`, `假设、参数与约束证据 12`, `推理链与跨问题联动 12`, `求解真实性与可复现性 10`, `检验、反证与稳健性 10`, and `洞察、创新与实际价值 5`.
+7. Before reading the paper for quality, freeze a model-independent requirement matrix containing the mandatory core tasks, inviolable conditions, required outputs, evidence needed for results, data issues, validation risks, cross-question information transfers and implementation constraints. Then distribute every one of the seven core dimensions across the actual questions. Keep `模型建立`, `模型求解`, and `结果与回答` as evidence-location tags, not a competing second weight system. Show the frozen rubric only inside `详细评分`.
+8. Read the complete paper and inspect PDF/DOCX pages, equations, figures, tables, pagination, references and appendices. Map every task and every atomic checklist item to evidence.
+9. Score by atomic subtraction, not impression. For every core item, ask why the abstraction is appropriate, why this model is needed, why a simpler model is insufficient, whether the data support the complexity, where key parameters and constraints originate, and whether results have independent validation. Assign every core atomic item to exactly one of the seven dimensions and one problem/task. Use `模型建立`, `模型求解`, or `结果与回答` only to locate its evidence. Apply separate 1/2/3 deductions for minor, material and severe failures, and preserve the 90% judge ceiling.
+10. Check geometry/mechanism, mathematics, units, algorithms, data provenance, numerical results, reproducibility, baseline comparisons, validation, falsification, sensitivity and feasibility. Complexity and fashionable model names do not earn points without necessity and supporting evidence. Record every paper deduction separately from `评委满分保留（该项90%封顶）`.
+11. Sum the ordinary deduction-based score. If it is below 20 and no non-compensable core failure applies, read and apply [references/low-score-safeguard.md](references/low-score-safeguard.md): independently rescore demonstrated work from zero, cap that bottom-up score at 35, and use the higher result. Then apply the post-score checks in `evidence-centered-scoring.md`: one 5-point abstract penalty when problem paragraphs omit what was being solved; 5 points for every materially distinct unexplained equation/symbol block; one 5-point whole-paper penalty when concrete results or key process-derived values appear before the corresponding formal solution; a 3-point penalty when the appendix or attachment does not contain the core code needed to reproduce each question; and 10 points for an independently severe evidence-integrity failure. A symbol table never replaces local first-use explanation. The attachment requires each question's core reproducibility code, not all engineering code. Do not apply any page-count tier penalty: CPGMCM does not set a "body about 30 pages" target nor a 15/30-page appendix tier; appendix pages, whether they count toward the PDF, and whether code ships as a separate attachment all defer to the current official 《论文格式规范》. If the attachment exceeds the 50 MB limit, report it as a submission-compliance issue rather than a paper deduction. Floor at zero and show page/formula/section evidence for every penalty.
+12. Perform the informed-outsider narrative pass in `evidence-centered-scoring.md`. If persistent missing definitions or logical breaks make the central modeling story unreadable, cap the post-penalty raw paper-quality score at 49.9. Only a paper that an informed non-specialist can follow may score above 80. Do not trigger this cap for isolated awkward wording.
+13. Apply the deterministic format-quality coefficient to the resulting raw score. For CPGMCM, run `scripts/competition_context.py` and keep three scores separate: `论文质量最终得分`, `赛题竞争修正分`, and `华为赛题竞争修正分`. Apply problem-difficulty, participating-unit and Huawei-problem data exactly as defined in `competition-context-adjustment.md`. Never rewrite a problem/unit/Huawei adjustment as a paper defect or rubric deduction. For non-CPGMCM contests, do not apply these context adjustments.
+14. Prefer `scripts/score_percentile.py` when a matching empirical distribution exists. Otherwise run `scripts/award_position.py --score <adjusted-score> --contest-type cpgmcm|other`. CPGMCM position estimates must state which score route is being described; other contests use the small-contest uniform approximation and 55/65/75 award anchors.
+15. Read [references/html-output.md](references/html-output.md). Build the final report from `assets/report-template.html`, validate it, and deliver the completed HTML file. Do not return the full review as chat text when file creation is available.
+
+## Required output order
+
+Place only the following sections in the HTML file, in this exact order. Do not output input/scope, problem-specific rubric, paper reconstruction, limitations, warning, strengths/issues or award-band sections separately.
+
+### 最终得分与竞赛位次
+
+Use exactly these bold field labels, substituting calculated values:
+
+**原始得分：x.x/100**
+
+**格式质量系数：x.xx**
+
+**最终得分：x.x/100**
+
+**预估超过约x.x%的有效参赛论文**
+
+**等价位次：约前x.x%**
+
+Then write one method note matching the selected route:
+
+- CPGMCM: `这里的位次是根据既定的2025研究生赛获奖比例锚点插值估算，`
+- Other contests: `这里的位次按小型竞赛10-90分近似均匀分布估算，不代表实际名次，`
+
+### 详细评分
+
+Show a table with problem/task, one of the seven evidence-centered dimensions, evidence location (`模型建立`/`模型求解`/`结果与回答`), atomic criterion, nominal weight, evidence/location and the separate 1-3 point deduction. Show that the seven core dimension totals are exactly `12/14/12/12/10/10/5 = 75`, plus the 10-point abstract, 10-point format and 5-point overall categories. Include category subtotals, imported-format conversion, formatting deductions and multiplier evidence. Clearly distinguish nominal weights, paper deductions and the 90% judge ceiling.
+
+After the ordinary ledger, show a separate `专项扣分与可读性门槛` table containing the abstract problem-description check, every unexplained equation/symbol occurrence, the result-before-solution check, the attachment code-completeness check and its 0/3 point result (never a page-count tier, per step 11), any 10-point evidence-integrity penalty, Chinese/English source balance, the informed-outsider reading result, any 49.9 cap and the resulting raw-score arithmetic.
+
+Show the scoring route: `常规扣分法` or `低分保底复评`. If the safeguard ran, show the ordinary raw score, bottom-up evidenced score, 35-point cap, selected raw score and any reason the safeguard was disallowed. Also show `严格格式审查` or `常规格式审查`, including whether `hwb-paper-format-checker` was invoked/imported.
+
+For CPGMCM, immediately after the paper-quality ledger add a distinct `竞赛环境校准` table showing: 赛题编号, 赛题难度与修正, 参赛单位历史, 华为赛题选择, 数据年份, 置信度, 赛题竞争修正分 and 华为赛题竞争修正分. Do not merge these adjustments into the 100-point rubric.
+
+### 本题任务分解
+
+List every task, constraint, required output and dependency concisely.
+
+### 资格与格式审查
+
+Show the eligibility audit and itemized formatting deductions. Mark unavailable physical evidence as `待人工核验`, never as failure.
+
+### 评委式评价
+
+Give a concise overall judgment followed by the most consequential strengths and defects, with locations.
+
+### 优先修改建议
+
+Give 3-5 changes ordered by expected score gain. Do not promise an award.
+
+### 官方渠道提示
+
+After all review sections, place the following official-channel block as the final visible block of the HTML. Preserve its wording, emphasis, order and line breaks:
+
+✨ 请以官方渠道核正当届规则
+中国研究生创新实践系列大赛管理平台：https://cpipc.acge.org.cn/
+竞赛期间官方答疑论坛（数学建模网）：https://www.shumo.com
+竞赛组委会秘书处（东南大学）：025-83795939 / gscpc3@seu.edu.cn
+本规则摘要为辅助参考，不构成获奖承诺；一切以当届官方文件为准。
+
+## Guardrails
+
+- Never claim an official award, exact rank, plagiarism finding or statistical certainty without evidence.
+- Never lower the paper-quality score because of problem letter, participating unit or Huawei-problem choice. These affect only empirical award competitiveness.
+- Never infer that a student cannot win solely because a unit lacks historical awards; present the data as a prior with explicit uncertainty.
+- If either complete input is missing, provide provisional analysis only and omit numeric score and percentile.
+- Do not invent paper content, calculations or contest rules.
+- Keep the visible report limited to the six required sections above.
+- Always produce a self-contained HTML deliverable when file writing is available. In chat, return only a short completion note and the file link.

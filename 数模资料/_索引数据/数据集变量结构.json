@@ -1,0 +1,1755 @@
+{
+ "数据来源说明": "本地归档 <本地归档根目录>/数据集，为 2025 年（第二十二届）E 题“高速列车轴承智能故障诊断问题”配套数据。",
+ "文件格式": "MATLAB 5.0 MAT-file（v5），数值块为 zlib 压缩（miCOMPRESSED），工作区变量为 double 列向量。",
+ "目标域数据集": {
+  "A.mat": [
+   {
+    "var": "A",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "B.mat": [
+   {
+    "var": "B",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "C.mat": [
+   {
+    "var": "C",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "D.mat": [
+   {
+    "var": "D",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "E.mat": [
+   {
+    "var": "E",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "F.mat": [
+   {
+    "var": "F",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "G.mat": [
+   {
+    "var": "G",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "H.mat": [
+   {
+    "var": "H",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "I.mat": [
+   {
+    "var": "I",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "J.mat": [
+   {
+    "var": "J",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "K.mat": [
+   {
+    "var": "K",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "L.mat": [
+   {
+    "var": "L",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "M.mat": [
+   {
+    "var": "M",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "N.mat": [
+   {
+    "var": "N",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "O.mat": [
+   {
+    "var": "O",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ],
+  "P.mat": [
+   {
+    "var": "P",
+    "dims": [
+     256000,
+     1
+    ]
+   }
+  ]
+ },
+ "源域数据集": {
+  "12kHz_DE_data\\B\\0007\\B007_0.mat": [
+   {
+    "var": "X118_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0007\\B007_1.mat": [
+   {
+    "var": "X119_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0007\\B007_2.mat": [
+   {
+    "var": "X120_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0007\\B007_3.mat": [
+   {
+    "var": "X121_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0014\\B014_0.mat": [
+   {
+    "var": "X185_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0014\\B014_1.mat": [
+   {
+    "var": "X186_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0014\\B014_2.mat": [
+   {
+    "var": "X187_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0014\\B014_3.mat": [
+   {
+    "var": "X188_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0021\\B021_0.mat": [
+   {
+    "var": "X222_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0021\\B021_1.mat": [
+   {
+    "var": "X223_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0021\\B021_2.mat": [
+   {
+    "var": "X224_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0021\\B021_3.mat": [
+   {
+    "var": "X225_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0028\\B028_0_(1797rpm).mat": [
+   {
+    "var": "X048_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0028\\B028_1_(1772rpm).mat": [
+   {
+    "var": "X049_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0028\\B028_2_(1750rpm).mat": [
+   {
+    "var": "X050_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\B\\0028\\B028_3_(1730rpm).mat": [
+   {
+    "var": "X051_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0007\\IR007_0.mat": [
+   {
+    "var": "X105_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0007\\IR007_1.mat": [
+   {
+    "var": "X106_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0007\\IR007_2.mat": [
+   {
+    "var": "X107_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0007\\IR007_3.mat": [
+   {
+    "var": "X108_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0014\\IR014_0.mat": [
+   {
+    "var": "X169_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0014\\IR014_1.mat": [
+   {
+    "var": "X170_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0014\\IR014_2.mat": [
+   {
+    "var": "X171_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0014\\IR014_3.mat": [
+   {
+    "var": "X172_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0021\\IR021_0.mat": [
+   {
+    "var": "X209_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0021\\IR021_1.mat": [
+   {
+    "var": "X210_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0021\\IR021_2.mat": [
+   {
+    "var": "X211_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0021\\IR021_3.mat": [
+   {
+    "var": "X212_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0028\\IR028_0_(1797rpm).mat": [
+   {
+    "var": "X056_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0028\\IR028_1_(1772rpm).mat": [
+   {
+    "var": "X057_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0028\\IR028_2_(1750rpm).mat": [
+   {
+    "var": "X058_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\IR\\0028\\IR028_3_(1730rpm).mat": [
+   {
+    "var": "X059_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0007\\OR007@6_0.mat": [
+   {
+    "var": "X130_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X130_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0007\\OR007@6_1.mat": [
+   {
+    "var": "X131_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0007\\OR007@6_2.mat": [
+   {
+    "var": "X132_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X132_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0007\\OR007@6_3.mat": [
+   {
+    "var": "X133_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0014\\OR014@6_0.mat": [
+   {
+    "var": "X197_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0014\\OR014@6_1.mat": [
+   {
+    "var": "X198_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0014\\OR014@6_2.mat": [
+   {
+    "var": "X199_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0014\\OR014@6_3.mat": [
+   {
+    "var": "X200_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0021\\OR021@6_0.mat": [
+   {
+    "var": "X234_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0021\\OR021@6_1.mat": [
+   {
+    "var": "X235_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0021\\OR021@6_2.mat": [
+   {
+    "var": "X236_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Centered\\0021\\OR021@6_3.mat": [
+   {
+    "var": "X237_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_0.mat": [
+   {
+    "var": "X156_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_1.mat": [
+   {
+    "var": "X158_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_2.mat": [
+   {
+    "var": "X159_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X159_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_3.mat": [
+   {
+    "var": "X160_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_0.mat": [
+   {
+    "var": "X258_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X258_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X258_BA_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_1.mat": [
+   {
+    "var": "X259_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_2.mat": [
+   {
+    "var": "X260_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_3.mat": [
+   {
+    "var": "X261_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_0.mat": [
+   {
+    "var": "X144_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_1.mat": [
+   {
+    "var": "X145_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_2.mat": [
+   {
+    "var": "X146_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_3.mat": [
+   {
+    "var": "X147_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_0.mat": [
+   {
+    "var": "X246_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_1.mat": [
+   {
+    "var": "X247_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_2.mat": [
+   {
+    "var": "X248_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_3.mat": [
+   {
+    "var": "X249_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0007\\B007_0.mat": [
+   {
+    "var": "X282_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X282_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0007\\B007_1.mat": [
+   {
+    "var": "X283_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0007\\B007_2.mat": [
+   {
+    "var": "X284_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0007\\B007_3.mat": [
+   {
+    "var": "X285_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X285_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0014\\B014_0.mat": [
+   {
+    "var": "X286_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0014\\B014_1.mat": [
+   {
+    "var": "X287_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0014\\B014_2.mat": [
+   {
+    "var": "X288_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0014\\B014_3.mat": [
+   {
+    "var": "X289_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0021\\B021_0.mat": [
+   {
+    "var": "X290_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0021\\B021_1.mat": [
+   {
+    "var": "X291_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0021\\B021_2.mat": [
+   {
+    "var": "X292_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\B\\0021\\B021_3.mat": [
+   {
+    "var": "X293_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0007\\IR007_0.mat": [
+   {
+    "var": "X278_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X278_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0007\\IR007_1.mat": [
+   {
+    "var": "X279_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0007\\IR007_2.mat": [
+   {
+    "var": "X280_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0007\\IR007_3.mat": [
+   {
+    "var": "X281_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0014\\IR014_0.mat": [
+   {
+    "var": "X274_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0014\\IR014_1.mat": [
+   {
+    "var": "X275_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0014\\IR014_2.mat": [
+   {
+    "var": "X276_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0014\\IR014_3.mat": [
+   {
+    "var": "X277_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0021\\IR021_0.mat": [
+   {
+    "var": "X270_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0021\\IR021_1.mat": [
+   {
+    "var": "X271_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0021\\IR021_2.mat": [
+   {
+    "var": "X272_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X272_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\IR\\0021\\IR021_3.mat": [
+   {
+    "var": "X273_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Centered\\0007\\OR007@6_0.mat": [
+   {
+    "var": "X294_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Centered\\0007\\OR007@6_1.mat": [
+   {
+    "var": "X295_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Centered\\0007\\OR007@6_2.mat": [
+   {
+    "var": "X296_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Centered\\0007\\OR007@6_3.mat": [
+   {
+    "var": "X297_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Centered\\0014\\OR014@6_0.mat": [
+   {
+    "var": "X313_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Centered\\0021\\OR021@6_0.mat": [
+   {
+    "var": "X315_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Opposite\\0007\\OR007@12_0.mat": [
+   {
+    "var": "X302_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Opposite\\0007\\OR007@12_1.mat": [
+   {
+    "var": "X305_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Opposite\\0007\\OR007@12_2.mat": [
+   {
+    "var": "X306_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Opposite\\0007\\OR007@12_3.mat": [
+   {
+    "var": "X307_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0007\\OR007@3_0.mat": [
+   {
+    "var": "X298_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0007\\OR007@3_1.mat": [
+   {
+    "var": "X299_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0007\\OR007@3_2.mat": [
+   {
+    "var": "X300_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0007\\OR007@3_3.mat": [
+   {
+    "var": "X301_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0014\\OR014@3_0.mat": [
+   {
+    "var": "X310_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X310_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0014\\OR014@3_1.mat": [
+   {
+    "var": "X309_DE_time",
+    "dims": [
+     121168,
+     1
+    ]
+   },
+   {
+    "var": "X309_FE_time",
+    "dims": [
+     121168,
+     1
+    ]
+   },
+   {
+    "var": "X309_BA_time",
+    "dims": [
+     121168,
+     1
+    ]
+   },
+   {
+    "var": "X309RPM",
+    "dims": [
+     1,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0014\\OR014@3_2.mat": [
+   {
+    "var": "X311_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   },
+   {
+    "var": "X311_FE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0014\\OR014@3_3.mat": [
+   {
+    "var": "X312_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0021\\OR021@3_1.mat": [
+   {
+    "var": "X316_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0021\\OR021@3_2.mat": [
+   {
+    "var": "X317_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "12kHz_FE_data\\OR\\Orthogonal\\0021\\OR021@3_3.mat": [
+   {
+    "var": "X318_DE_time",
+    "dims": [
+     96000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0007\\B007_0.mat": [
+   {
+    "var": "X122_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0007\\B007_1.mat": [
+   {
+    "var": "X123_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0007\\B007_2.mat": [
+   {
+    "var": "X124_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0007\\B007_3.mat": [
+   {
+    "var": "X125_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0014\\B014_0.mat": [
+   {
+    "var": "X189_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0014\\B014_1.mat": [
+   {
+    "var": "X190_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0014\\B014_2.mat": [
+   {
+    "var": "X191_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0014\\B014_3.mat": [
+   {
+    "var": "X192_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X192_FE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0021\\B021_0.mat": [
+   {
+    "var": "X226_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X226_FE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0021\\B021_1.mat": [
+   {
+    "var": "X227_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0021\\B021_2.mat": [
+   {
+    "var": "X228_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\B\\0021\\B021_3.mat": [
+   {
+    "var": "X229_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0007\\IR007_0.mat": [
+   {
+    "var": "X109_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0007\\IR007_1.mat": [
+   {
+    "var": "X110_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0007\\IR007_2.mat": [
+   {
+    "var": "X111_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0007\\IR007_3.mat": [
+   {
+    "var": "X112_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0014\\IR014_0.mat": [
+   {
+    "var": "X173_DE_time",
+    "dims": [
+     63788,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0014\\IR014_1.mat": [
+   {
+    "var": "X175_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0014\\IR014_2.mat": [
+   {
+    "var": "X176_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0014\\IR014_3.mat": [
+   {
+    "var": "X177_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0021\\IR021_0.mat": [
+   {
+    "var": "X213_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X213_FE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X213RPM",
+    "dims": [
+     1,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0021\\IR021_1.mat": [
+   {
+    "var": "X214_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0021\\IR021_2.mat": [
+   {
+    "var": "X215_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\IR\\0021\\IR021_3.mat": [
+   {
+    "var": "X217_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X217_FE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0007\\OR007@6_0.mat": [
+   {
+    "var": "X135_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0007\\OR007@6_1.mat": [
+   {
+    "var": "X136_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0007\\OR007@6_2.mat": [
+   {
+    "var": "X137_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X137_FE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0007\\OR007@6_3.mat": [
+   {
+    "var": "X138_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0014\\OR014@6_0.mat": [
+   {
+    "var": "X201_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0014\\OR014@6_1.mat": [
+   {
+    "var": "X202_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   },
+   {
+    "var": "X202_FE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0014\\OR014@6_2.mat": [
+   {
+    "var": "X203_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0014\\OR014@6_3.mat": [
+   {
+    "var": "X204_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0021\\OR021@6_0.mat": [
+   {
+    "var": "X238_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0021\\OR021@6_1.mat": [
+   {
+    "var": "X239_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0021\\OR021@6_2.mat": [
+   {
+    "var": "X240_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Centered\\0021\\OR021@6_3.mat": [
+   {
+    "var": "X241_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_0.mat": [
+   {
+    "var": "X161_DE_time",
+    "dims": [
+     129969,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_1.mat": [
+   {
+    "var": "X162_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_2.mat": [
+   {
+    "var": "X163_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0007\\OR007@12_3.mat": [
+   {
+    "var": "X164_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_0.mat": [
+   {
+    "var": "X262_DE_time",
+    "dims": [
+     130549,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_1.mat": [
+   {
+    "var": "X263_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_2.mat": [
+   {
+    "var": "X264_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Opposite\\0021\\OR021@12_3.mat": [
+   {
+    "var": "X265_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_0.mat": [
+   {
+    "var": "X148_DE_time",
+    "dims": [
+     124602,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_1.mat": [
+   {
+    "var": "X149_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_2.mat": [
+   {
+    "var": "X150_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0007\\OR007@3_3.mat": [
+   {
+    "var": "X151_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_0.mat": [
+   {
+    "var": "X250_DE_time",
+    "dims": [
+     128663,
+     1
+    ]
+   },
+   {
+    "var": "X250_FE_time",
+    "dims": [
+     128663,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_1.mat": [
+   {
+    "var": "X251_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_2.mat": [
+   {
+    "var": "X252_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_DE_data\\OR\\Orthogonal\\0021\\OR021@3_3.mat": [
+   {
+    "var": "X253_DE_time",
+    "dims": [
+     192000,
+     1
+    ]
+   }
+  ],
+  "48kHz_Normal_data\\N_0.mat": [
+   {
+    "var": "X097_DE_time",
+    "dims": [
+     243938,
+     1
+    ]
+   }
+  ],
+  "48kHz_Normal_data\\N_1_(1772rpm).mat": [
+   {
+    "var": "X098_DE_time",
+    "dims": [
+     384000,
+     1
+    ]
+   }
+  ],
+  "48kHz_Normal_data\\N_2_(1750rpm).mat": [
+   {
+    "var": "X099_DE_time",
+    "dims": [
+     384000,
+     1
+    ]
+   }
+  ],
+  "48kHz_Normal_data\\N_3.mat": [
+   {
+    "var": "X100_DE_time",
+    "dims": [
+     384000,
+     1
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB AI 痕迹审计"
+  short_description: "审计论文的 AI 生成痕迹、建模模板化与模型真实性"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-paper-aigc-auditor 审计我的论文：定位机器腔段落、模板化建模与伪改进，给出人工化修改建议（不是为了规避检测）。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,10 @@
+﻿# 参赛单位（研究生培养单位）获奖记录空白模板
+# 重要：本仓库不提供、也不伪造任何单位的获奖数据。此模板仅供使用者自行填写。
+# 填写说明：
+#   1) 务必从官方获奖名单（中国研究生创新实践系列大赛管理平台 cpipc.acge.org.cn）自行核对待填数据；
+#   2) 每行填写一个单位在某一届（year）的获奖情况，可填多行；
+#   3) 组委会规定每个研究生培养单位每届一等奖不超过 3 项，单位内竞争应结合此上限理解；
+#   4) 列 first_prize_count / second_prize_count / third_prize_count 为该单位该届对应奖项队数；
+#   5) note 可填写补充说明（如是否含华为专项奖、国际赛道等）；
+#   6) 本文件默认仅含表头与说明，未填任何单位数据；未填时 competition_context.py 的单位修正标记为"无法计算"。
+unit_name,year,first_prize_count,second_prize_count,third_prize_count,note

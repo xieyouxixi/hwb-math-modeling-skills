@@ -1,0 +1,7 @@
+interface:
+  display_name: "HWB 题意翻译"
+  short_description: "逐句翻译华为杯 A~F 赛题，抽取定义、约束、数据口径与跨问关系"
+  brand_color: "#B4232A"
+  default_prompt: "使用 $hwb-problem-translator 翻译以下完整赛题（含补充说明与附件说明），逐句解释并输出跨问题依赖图与待澄清清单。"
+policy:
+  allow_implicit_invocation: true
